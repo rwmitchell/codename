@@ -10,6 +10,7 @@ function codename() {
     Darwin)
       osver=$(printf "%d" $(sw_vers -productVersion | sed 's/\..*//'))
       case $osver in
+        14) oscode="Sonoma";   ;;
         13) oscode="Ventura";  ;;
         12) oscode="Monterey"; ;;
         11) oscode="Big Sur";  ;;
